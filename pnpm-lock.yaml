@@ -8,12 +8,18 @@ importers:
 
   .:
     dependencies:
+      cesium:
+        specifier: 1.95.0
+        version: 1.95.0
       ol:
         specifier: ^10.1.0
         version: 10.1.0
       pinia:
         specifier: ^2.2.2
         version: 2.2.2(typescript@5.6.2)(vue@3.5.6(typescript@5.6.2))
+      vite-plugin-cesium:
+        specifier: ^1.2.23
+        version: 1.2.23(cesium@1.95.0)(rollup@4.22.0)(vite@5.4.6(@types/node@22.5.5)(sass@1.79.2))
       vue:
         specifier: ^3.4.37
         version: 3.5.6(typescript@5.6.2)
@@ -27,9 +33,6 @@ importers:
       '@vitejs/plugin-vue':
         specifier: ^5.1.2
         version: 5.1.4(vite@5.4.6(@types/node@22.5.5)(sass@1.79.2))(vue@3.5.6(typescript@5.6.2))
-      cesium:
-        specifier: 1.95.0
-        version: 1.95.0
       sass:
         specifier: ^1.79.2
         version: 1.79.2
@@ -39,9 +42,6 @@ importers:
       vite:
         specifier: ^5.4.1
         version: 5.4.6(@types/node@22.5.5)(sass@1.79.2)
-      vite-plugin-cesium:
-        specifier: ^1.2.23
-        version: 1.2.23(cesium@1.95.0)(rollup@4.22.0)(vite@5.4.6(@types/node@22.5.5)(sass@1.79.2))
       vue-tsc:
         specifier: ^2.0.29
         version: 2.1.6(typescript@5.6.2)
