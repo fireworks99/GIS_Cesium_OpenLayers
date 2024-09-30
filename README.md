@@ -48,7 +48,9 @@
   * 引入Sass
   * 引入 Cesium与OpenLayers
   * CI/CD，配置Github Pages （ [可参照这个流程](https://fireworks99.github.io/LearnVue3Demo/) ）
-  * 
+* 2024.09.30：
+  * `pnpm add cesium@1.95.0 vite-plugin-cesium -D`  引入cesium
+
 
 
 

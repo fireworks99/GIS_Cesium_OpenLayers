@@ -1,5 +1,6 @@
 <template>
-  <MapView />
+  <EarthView v-if="earch_show"/>
+  <MapView v-else/>
 </template>
 
 <script setup lang="ts">
@@ -8,14 +9,17 @@
 // import { storeToRefs } from "pinia";
 // const { sysLoading } = storeToRefs(useAppStore());
 
-import { defineComponent } from 'vue';
+import { defineComponent, ref } from 'vue';
 import MapView from '@/components/MapView.vue';
+import EarthView from '@/components/EarthView.vue';
 
 defineComponent({
   components: {
     MapView,
   },
 });
+
+const earch_show = ref(true);
 
 </script>
 
