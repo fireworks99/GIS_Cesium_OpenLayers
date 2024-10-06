@@ -1,5 +1,5 @@
 <template>
-  <div id="earch" class="earth-container"></div>
+  <div id="earth" class="earth-container"></div>
 </template>
 
 <script lang="ts" setup>
@@ -8,7 +8,7 @@ import * as Cesium from 'cesium';
 
 onMounted(() => {
   Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiY2ExNmYyOC0yYjk5LTRjOGMtYTI0ZC0xZmFmMDAwMzhlZDUiLCJpZCI6NTI1MjgsImlhdCI6MTYxODY2NjE5N30.ETTMOAYLjTMplvAxKehiZCrzT1o2s--bFqREAOSP3fg';
-  const viewer = new Cesium.Viewer('earch', {
+  const viewer = new Cesium.Viewer('earth', {
     infoBox: false,//不设为false会报错
     geocoder: false,//右上角搜索按钮
     navigationHelpButton: false,//右上角帮助按钮
