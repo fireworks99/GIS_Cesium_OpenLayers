@@ -1,6 +1,11 @@
 <template>
-  <EarthView v-if="earch_show"/>
-  <MapView v-else/>
+  <div id="home_wrapper">
+    <div id="tool_panel">
+      <img src="@/assets/img/menu.svg" alt="">
+    </div>
+    <EarthView v-if="earth_show" />
+    <MapView v-else />
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -19,10 +24,24 @@ defineComponent({
   },
 });
 
-const earch_show = ref(true);
+const earth_show = ref(true);
 
 </script>
 
 <style scoped lang="scss">
+
+#home_wrapper {
+  position: relative;
+
+  #tool_panel {
+    position: absolute;
+    z-index: 1;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
 
 </style>
