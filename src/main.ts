@@ -1,8 +1,10 @@
 import { createApp } from 'vue'
-import './style.css'
+import '@/assets/styles/index.scss'
 import App from './App.vue'
 import router from '@/router'
 import { createPinia } from 'pinia'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
 
 Object.defineProperty(globalThis, "CESIUM_BASE_URL", {
   value: '/GIS_Cesium_OpenLayers/lib/Cesium',
@@ -13,4 +15,5 @@ const pinia = createPinia()
 
 app.use(router)
 app.use(pinia)
+app.use(ElementPlus)
 app.mount('#app')

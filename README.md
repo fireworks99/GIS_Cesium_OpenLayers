@@ -50,6 +50,9 @@
   * CI/CD，配置Github Pages （ [可参照这个流程](https://fireworks99.github.io/LearnVue3Demo/) ）
 * 2024.09.30：
   * `pnpm add cesium@1.95.0 vite-plugin-cesium`  引入cesium
+* 2024.12.13:
+  * `pnpm install element-plus --save` 引入Element Plus
+  * 工具栏
 
 
 

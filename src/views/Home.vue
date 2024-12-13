@@ -1,8 +1,6 @@
 <template>
   <div id="home_wrapper">
-    <div id="tool_panel">
-      <img src="@/assets/img/menu.svg" alt="">
-    </div>
+    <FuncPanel id="func_panel"/>
     <EarthView v-if="earth_show" />
     <MapView v-else />
   </div>
@@ -15,11 +13,13 @@
 // const { sysLoading } = storeToRefs(useAppStore());
 
 import { defineComponent, ref } from 'vue';
+import FuncPanel from '@/components/FuncPanel.vue';
 import MapView from '@/components/MapView.vue';
 import EarthView from '@/components/EarthView.vue';
 
 defineComponent({
   components: {
+    FuncPanel,
     MapView,
   },
 });
@@ -29,41 +29,21 @@ const earth_show = ref(true);
 </script>
 
 <style scoped lang="scss">
+@import '@/assets/styles/variables.scss';
+
 #home_wrapper {
   position: relative;
 
-  #tool_panel {
+  #func_panel {
     position: absolute;
     z-index: 1;
-    left: 4px;
-    top: 4px;
-
-    box-sizing: border-box;
+    left: 32px;
+    top: 32px;
     width: 32px;
     height: 32px;
-    border-radius: 14%;
-    padding: 0;
-    vertical-align: middle;
-    background: #303336;
-    border: 1px solid #444;
-    margin: 2px 3px;
+    padding: 8px;
     cursor: pointer;
-    overflow: hidden;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &:hover {
-      background: #48b;
-      border-color: #aef;
-      box-shadow: 0 0 8px #fff;
-    }
-
-    img {
-      width: 24px;
-      height: 24px;
-    }
+    background-color: $tec-bg-color;
   }
 }
 </style>
